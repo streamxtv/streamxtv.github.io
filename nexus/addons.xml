@@ -22,7 +22,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.tvstreamx" name="[COLOR magenta][B]TV[/COLOR][COLOR yellow]STREAMX[/B][/COLOR]" version="1.2.0" provider-name="[B]@gh000000000000st[/B]">
+<addon id="plugin.video.tvstreamx" name="[COLOR magenta][B]TV[/COLOR][COLOR yellow]STREAMX[/B][/COLOR]" version="1.2.1" provider-name="[B]@gh000000000000st[/B]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.six" />
@@ -31,7 +31,7 @@
         <import addon="script.module.beautifulsoup4"/>
         <import addon="inputstream.ffmpegdirect" />
         <import addon="script.module.flask" />
-        <import addon="script.hls.tester" />
+        <import addon="script.module.hls.tester" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="app.py">
         <provides>video</provides>
@@ -494,14 +494,14 @@ v0.5.9 (2022-03-22)
   </extension>
 </addon>
 
-<addon id="script.hls.tester" name="HLS TESTER" version="0.0.8" provider-name="Deivid Silva">
+<addon id="script.module.hls.tester" name="HLS TESTER" version="0.0.9" provider-name="Deivid Silva">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" />
     <import addon="script.module.m3u8" />
   </requires>
   <extension point="xbmc.python.script" library="default.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Um testador básico de stream HLS para Kodi.</summary>
