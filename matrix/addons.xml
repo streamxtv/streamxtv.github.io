@@ -496,7 +496,7 @@ v0.5.9 (2022-03-22)
 
 <addon id="script.hls.tester"
        name="HLS TESTER"
-       version="0.0.4"
+       version="0.0.7"
        provider-name="Deivid Silva">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
