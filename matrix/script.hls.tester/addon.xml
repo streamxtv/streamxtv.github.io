@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.hls.tester"
-       name="HLS TESTER"
-       version="0.0.7"
-       provider-name="Deivid Silva">
+<addon id="script.hls.tester" name="HLS TESTER" version="0.0.4" provider-name="Deivid Silva">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" />
