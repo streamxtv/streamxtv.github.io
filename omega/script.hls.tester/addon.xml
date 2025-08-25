@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.hls.tester"
+       name="HLS TESTER"
+       version="0.0.4"
+       provider-name="Deivid Silva">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.m3u8" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Um testador básico de stream HLS para Kodi.</summary>
+    <description lang="en">Permite reproduzir streams simples HLS (.m3u8) diretamente, potencialmente melhorando a estabilidade da reprodução por meio de um proxy local.</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
