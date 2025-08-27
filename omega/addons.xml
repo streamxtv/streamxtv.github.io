@@ -22,7 +22,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.tvstreamx" name="[COLOR magenta][B]TV[/COLOR][COLOR yellow]STREAMX[/B][/COLOR]" version="1.2.2" provider-name="[B]@gh000000000000st[/B]">
+<addon id="plugin.video.tvstreamx" name="[COLOR magenta][B]TV[/COLOR][COLOR yellow]STREAMX[/B][/COLOR]" version="2.2.4" provider-name="[B]@gh000000000000st[/B]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.six" />
@@ -31,7 +31,6 @@
         <import addon="script.module.beautifulsoup4"/>
         <import addon="inputstream.ffmpegdirect" />
         <import addon="script.module.flask" />
-        <import addon="script.hls.tester" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="app.py">
         <provides>video</provides>
