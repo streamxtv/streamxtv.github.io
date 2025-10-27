@@ -4,7 +4,7 @@
   <img src="https://raw.githubusercontent.com/BLACKSHEEPcolabdev/add-on/refs/heads/master/BLACKGHOST/Imagens/topo2.png" alt="Imagem de topo" />
 </p>
 
-<p align="center"><strong>Versão Atual</strong>: `1.7</p>
+<p align="center"><strong>Versão Atual</strong>: `1.8</p>
 
 Instruções para a adição deste repositório no Kodi:
 
@@ -18,7 +18,7 @@ Instruções para a adição deste repositório no Kodi:
   <li>Em Addons, instalar de um ficheiro ZIP.  
     Quando perguntar pela localização, selecionar  
     "streamxtv Repo" e instalar:  
-    <a href="repository.streamxtv-1.7.zip">repository.streamxtv-1.7.zip</a>.</li>
+    <a href="repository.streamxtv-1.8.zip">repository.streamxtv-1.8.zip</a>.</li>
   <li>Voltar para "Addons", mas desta vez, selecionar  
     "Instalar do repositório".</li>
   <li>Selecionar o "streamxtv Repository".</li>
