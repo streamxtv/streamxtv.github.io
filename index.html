@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVSTREAMX - O Melhor Addon para Kodi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0" id="vanta-bg"></div>
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-pulse">
+                <span class="text-purple-500">TVSTREAMX</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                A Solução Completa para Kodi com proteção contra bloqueios, 100% gratuita e sem necessidade de VPN!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#features" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center">
+                    <i data-feather="eye" class="inline mr-2"></i> Conheça
+                </a>
+                <a href="#download" class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center">
+                    <i data-feather="download" class="inline mr-2"></i> Instalar
+                </a>
+                <a href="https://t.me/tvstreamx" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center">
+                    <i data-feather="send" class="mr-2"></i> Grupo
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">O que o TVSTREAMX oferece?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Seus cards de features aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Como instalar o TVSTREAMX</h2>
+            
+            <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-xl">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-500">
+                        <i data-feather="download" class="inline mr-2"></i> Passo a Passo
+                    </h3>
+                    <ol class="list-decimal pl-6 space-y-4">
+                        <li>Abra o Kodi e vá em Configurações > Gerenciador de arquivos.</li>
+                        <li>Selecione "Adicionar fonte" e digite a URL: <code class="bg-gray-900 px-2 py-1 rounded">https://streamxtv.github.io</code></li>
+                        <li>Volte para a tela inicial, vá em "Add-ons".</li>
+                        <li>Clique no ícone de caixa aberta (ou "Instalar de arquivo zip").</li>
+                        <li>Selecione a fonte "streamxtv.github.io" que você acabou de criar.</li>
+                        <li>Primeiro, instale a dependência: <code class="bg-gray-900 px-2 py-1 rounded">script.module.flask-2.1.3.zip</code></li>
+                        <li>Depois, instale o addon principal: <code class="bg-gray-900 px-2 py-1 rounded">plugin.video.tvstreamx-2.2.7.zip</code></li>
+                        <li>Pronto! O addon aparecerá em "Add-ons de Vídeo".</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-800">
+        <!-- Sua seção de FAQ aqui -->
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <!-- =================================================================== -->
+    <!--  BLOCO PARA O KODI - FICA INVISÍVEL NO NAVEGADOR                   -->
+    <!-- =================================================================== -->
+    <ul class="kodi-list">
+      <li><a href="plugin.video.tvstreamx-2.2.7.zip">plugin.video.tvstreamx-2.2.7.zip</a></li>
+      <li><a href="script.module.flask-2.1.3.zip">script.module.flask-2.1.3.zip</a></li>
+    </ul>
+    <!-- =================================================================== -->
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x7e22ce,
+            backgroundColor: 0x111827
+        });
+    </script>
+</body>
+</html>
