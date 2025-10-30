@@ -4,7 +4,7 @@
   <img src="https://raw.githubusercontent.com/BLACKSHEEPcolabdev/add-on/refs/heads/master/BLACKGHOST/Imagens/topo2.png" alt="Imagem de topo" />
 </p>
 
-<p align="center"><strong>Versão Atual</strong>: `2.0</p>
+<p align="center"><strong>Versão Atual</strong>: `2.1</p>
 
 Instruções para a adição deste repositório no Kodi:
 
@@ -18,7 +18,7 @@ Instruções para a adição deste repositório no Kodi:
   <li>Em Addons, instalar de um ficheiro ZIP.  
     Quando perguntar pela localização, selecionar  
     "streamxtv Repo" e instalar:  
-    <a href="repository.streamxtv-2.0.zip">repository.streamxtv-2.0.zip</a>.</li>
+    <a href="repository.streamxtv-2.1.zip">repository.streamxtv-2.1.zip</a>.</li>
   <li>Voltar para "Addons", mas desta vez, selecionar  
     "Instalar do repositório".</li>
   <li>Selecionar o "streamxtv Repository".</li>
@@ -28,12 +28,6 @@ Instruções para a adição deste repositório no Kodi:
 
 **🎉 Agora, é com você!
 Explore e aproveite o que o repositório tem a oferecer.**
-
----
-
-### 📄 Informações adicionais
-- **Criador**: [@BLACKGHOST_B](https://t.me/BLACKGHOST_B)  
-- **Site oficial**: [blackghostdev.vercel.app](https://blackghostdev.vercel.app)
 
 ---
 

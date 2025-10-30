@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.f4mTester" version="4.1.3" name="f4mTester" provider-name="Equipe Oneplay e Tiago ">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-		<import addon="script.module.requests"/>
-		<import addon="script.video.F4mProxy" version="4.0.9"/>
-        <import addon="inputstream.ffmpegdirect"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
-        <assets>
-			<icon>icon.png</icon>
-		</assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.tvstreamx" name="[COLOR magenta][B]TV[/COLOR][COLOR yellow]STREAMX[/B][/COLOR]" version="2.2.4" provider-name="[B]@gh000000000000st[/B]">
+<addon id="plugin.video.tvstreamx" name="[COLOR magenta][B]TV[/COLOR][COLOR yellow]STREAMX[/B][/COLOR]" version="2.2.8" provider-name="[B]@gh000000000000st[/B]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.six" />
@@ -30,15 +8,13 @@
         <import addon="script.module.requests"/>
         <import addon="script.module.beautifulsoup4"/>
         <import addon="inputstream.ffmpegdirect" />
-        <import addon="script.module.flask" />
     </requires>
-    <extension point="xbmc.python.pluginsource" library="app.py">
+    <extension point="xbmc.python.pluginsource" library="bl4444ck.py">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
 		<summary lang="pt">[COLOR magenta][B]TV[/COLOR][COLOR yellow]STREAMX[/B][/COLOR] [B]É UM PLUGIN FREE.</summary>
-		<description lang="pt_br">[B]Sua nova central de entretenimento. com acesso a listas de canais com guia de programação (EPG), filmes e séries. Nenhum conteúdo é hospedado por nós; o addon apenas organiza links de fontes externas.[/B]</description>
+		<description lang="pt_br">[B]Sua nova central de entretenimento, com acesso a listas de canais, filmes e séries. Nenhum conteúdo é hospedado por nós; o addon apenas organiza links de fontes externas.[/B]</description>
         <platform>all</platform>
         <disclaimer>[B][COLOR red]AVISO LEGAL:[/B][/COLOR] [B]O [COLOR magenta][B]TV[/COLOR][COLOR yellow]STREAMX[/B][/COLOR] [B]é uma ferramenta de busca e agregação. Não hospedamos, possuímos ou temos controle sobre qualquer conteúdo exibido. Todo o material é proveniente de fontes externas na internet, com as quais não temos qualquer afiliação. A responsabilidade pela utilização do conteúdo e pela verificação de sua legalidade é inteiramente do usuário final. Utilize por sua conta e risco.[/B]</disclaimer>
         <assets>
@@ -180,32 +156,6 @@
   - Use iOS client as fallback for default client</news></extension>
 </addon>
 
-<addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.2">
-    <requires>
-    </requires>
-    <extension point="xbmc.addon.repository">
-        <dir>
-            <info>http://127.0.0.1:65223/addons.xml</info>
-            <checksum>http://127.0.0.1:65223/addons.xml.md5</checksum>
-            <datadir>http://127.0.0.1:65223/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.python.script" library="default.py"/>
-    <extension point="xbmc.service" library="service.py"/>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>See https://github.com/ElementumOrg/repository.elementumorg/blob/master/LICENSE</license>
-        <source>https://github.com/ElementumOrg/repository.elementumorg</source>
-        <summary lang="en">GitHub virtual Add-on repository</summary>
-        <description lang="en">Customizable repository which acts as a proxy for defined GitHub users' add-ons updates.</description>
-        <news>
-        </news>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
-
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
   <extension point="xbmc.addon.repository" name="ResolveURL Repository">
     <dir>
@@ -228,38 +178,39 @@
   </extension>
 </addon>
 
-<addon id="repository.streamxtv" name="[B][COLOR yellow]REPOSITÓRIO[/COLOR][/B] [B][COLOR lime]TVSTREAMX[/COLOR][/B]" version="1.6" provider-name="[B][COLOR magenta]@gh000000000000st[/COLOR][/B]">
+<addon id="repository.streamxtv" name="[B][COLOR red]REPOSITÓRIO[/COLOR][/B] [B][COLOR lime]TVSTRAMX[/COLOR][/B]" version="2.1" provider-name="[B][COLOR magenta]@gh000000000000st[/COLOR][/B]">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
   </requires>
-  <extension point="xbmc.addon.repository" name="[B][COLOR yellow]REPOSITÓRIO[/COLOR][/B] [B][COLOR lime]TVSTREAMX[/COLOR][/B]">
+  <extension point="xbmc.addon.repository" name="[B][COLOR red]REPOSITÓRIO[/COLOR][/B] [B][COLOR lime]TVSTREAMX[/COLOR][/B]">
     <dir>
-    <info compressed="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master</datadir>
+    <info compressed="true">https://raw.github.com/streamxtv/streamxtv.github.io/master/addons.xml</info>
+    <checksum>https://raw.github.com/streamxtv/streamxtv.github.io/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.github.com/streamxtv/streamxtv.github.io/master</datadir>
     <hashes>false</hashes>
 </dir>
   <dir minversion="19.9.9">
-      <info compressed="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/omega/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/omega/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/omega</datadir>
+      <info compressed="true">https://raw.github.com/streamxtv/streamxtv.github.io/master/omega/addons.xml</info>
+      <checksum>https://raw.github.com/streamxtv/streamxtv.github.io/master/omega/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/streamxtv/streamxtv.github.io/master/omega</datadir>
       <hashes>false</hashes>
   </dir>
 <dir minversion="19.9.9">
-      <info compressed="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/nexus/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/nexus/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/nexus</datadir>
+      <info compressed="true">https://raw.github.com/streamxtv/streamxtv.github.io/master/nexus/addons.xml</info>
+      <checksum>https://raw.github.com/streamxtv/streamxtv.github.io/master/nexus/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/streamxtv/streamxtv.github.io/master/nexus</datadir>
       <hashes>false</hashes>
   </dir>
   <dir minversion="19.0.0">
-      <info compressed="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/matrix/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/matrix/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/matrix</datadir>
+      <info compressed="true">https://raw.github.com/streamxtv/streamxtv.github.io/master/matrix/addons.xml</info>
+      <checksum>https://raw.github.com/streamxtv/streamxtv.github.io/master/matrix/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/streamxtv/streamxtv.github.io/master/matrix</datadir>
       <hashes>false</hashes>
   </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>[B][COLOR yellow]REPOSITORIO TVSTREAMX[/B][/COLOR]</summary>
+    <summary>[B][COLOR green]REPOSITORIO TVSTREAMX[/B][/COLOR]</summary>
+    <description>[COLOR orange]REPOSITÓRIO OFICIAL [B][COLOR lime]TVSTREAMX[/B][/COLOR]</description>
     <disclaimer></disclaimer>
     <platform>all</platform>
     <assets>
@@ -267,44 +218,6 @@
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
-</addon>
-
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.73" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="plugin.video.elementum" optional="true"/>
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.future" version="0.16.0.4"/>
-    </requires>
-    <extension point="xbmc.python.script" library="burst.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum torrents provider</summary>
-        <summary lang="hr">Elementum torrent pružatelji usluga</summary>
-        <summary lang="es">Proveedor de torrents Elementum</summary>
-        <summary lang="ru">Поисковое дополнение Elementum</summary>
-        <summary lang="sv">Elementum-torrentleverantör</summary>
-        <description lang="en">Elementum Burst is a lean and mean multi-provider for Elementum.</description>
-        <description lang="hr">Elementum Burst je višestruki pružatelj usluga za Elementum.</description>
-        <description lang="es">Elementum Burst es un multi-proveedor simple y eficiente para Elementum.</description>
-        <description lang="ru">Elementum Burst это поисковое дополнение, для поиска торрентов для Elementum.</description>
-        <description lang="sv">Elementum Burst är en enkel och effektiv multi-leverantör för Elementum.</description>
-        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa bilo kojim izvorom sadržaja.</disclaimer>
-        <disclaimer lang="es">El autor no aloja ni distribuye ninguno de los contenidos mostrados por este complemento. El autor no tiene ninguna afiliación con los proveedores de contenido.</disclaimer>
-        <disclaimer lang="ru">Автор не несёт ответственности за использование дополнения, не распространяет данные, выводимые дополнением.</disclaimer>
-        <disclaimer lang="sv">Skaparen är inte värd eller distribuerar något av innehållet som visas av detta tillägg. Skaparen har ingen anslutning till innehållsleverantörerna.</disclaimer>
-        <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
-        <website>https://elementum.surge.sh</website>
-        <source>https://github.com/elgatito/script.elementum.burst</source>
-        <forum>TODO</forum>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
 </addon>
 
 <addon id="script.module.beautifulsoup4" name="beautifulsoup4" version="4.12.2" provider-name="Leonard Richardson">
@@ -682,30 +595,6 @@ v0.5.9 (2022-03-22)
       <icon>resources/icon.png</icon>
     </assets>
   </extension>
-</addon>
-
-<addon id="script.video.F4mProxy"
-	     name="F4mProxy"
-	     version="4.0.9"
-	     provider-name="Joel e Tiago">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.requests" />
-        <import addon="inputstream.ffmpegdirect" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Proxy for f4m</summary>
-		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
 </addon>
 
 <addon id="service.subtitles.opensubtitles"
