@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.streamxtv" name="[B][COLOR red]REPOSITÓRIO[/COLOR][/B] [B][COLOR lime]TVSTRAMX[/COLOR][/B]" version="2.0" provider-name="[B][COLOR magenta]@gh000000000000st[/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>  
+  </requires>
+  <extension point="xbmc.addon.repository" name="[B][COLOR red]REPOSITÓRIO[/COLOR][/B] [B][COLOR lime]TVSTREAMX[/COLOR][/B]">
+    <dir>
+    <info compressed="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master</datadir>
+    <hashes>false</hashes>
+</dir>
+  <dir minversion="19.9.9">
+      <info compressed="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/omega/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/omega/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/omega</datadir>
+      <hashes>false</hashes>
+  </dir> 
+<dir minversion="19.9.9">
+      <info compressed="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/nexus/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/nexus/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/nexus</datadir>
+      <hashes>false</hashes>
+  </dir>  
+  <dir minversion="19.0.0">
+      <info compressed="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/matrix/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/matrix/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/streamxtv/streamxtv.github.io/master/matrix</datadir>
+      <hashes>false</hashes>
+  </dir>    
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>[B][COLOR green]REPOSITORIO TVSTREAMX[/B][/COLOR]</summary>
+    <description>[COLOR orange]REPOSITÓRIO OFICIAL [B][COLOR lime]TVSTREAMX[/B][/COLOR]</description>
+    <disclaimer></disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
