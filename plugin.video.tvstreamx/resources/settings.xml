@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <category label="Guia de Programação (EPG)">
+        <setting
+            id="epg_timezone_offset"
+            type="slider"
+            label="Ajuste de Fuso Horário (em horas)"
+            default="0.0"
+            range="-12,0.5,12"
+            option="float"
+        />
+        <setting
+            id="info"
+            type="lsep"
+            label="[B]Como usar:[/B] Se o guia (EPG) estiver adiantado ou atrasado,"
+        />
+        <setting
+            id="info2"
+            type="lsep"
+            label="use este controle para ajustar. Ex: Se estiver 2 horas atrasado, ajuste para [B]+2.0[/B]."
+        />
+    </category>
+</settings>

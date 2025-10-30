@@ -97,7 +97,7 @@
                         <li>Volte para a tela inicial, vá em "Add-ons".</li>
                         <li>Clique no ícone de caixa aberta (ou "Instalar de arquivo zip").</li>
                         <li>Selecione a fonte "streamxtv.github.io" que você acabou de criar.</li>
-                        <li>Instale o addon principal: <code class="bg-gray-900 px-2 py-1 rounded">plugin.video.tvstreamx-2.2.8.zip</code></li>
+                        <li>Instale o addon principal: <code id="addon-filename-display" class="bg-gray-900 px-2 py-1 rounded">buscando a versão mais recente...</code></li>
                         <li>Pronto! O addon aparecerá em "Add-ons de Vídeo".</li>
                     </ol>
                 </div>
@@ -135,12 +135,13 @@
     <!--  BLOCO PARA O KODI - FICA INVISÍVEL NO NAVEGADOR                   -->
     <!-- =================================================================== -->
     <ul class="kodi-list">
-      <li><a href="plugin.video.tvstreamx-2.2.8.zip">plugin.video.tvstreamx-2.2.8.zip</a></li>
+      <li><a id="addon-download-link" href="plugin.video.tvstreamx-2.2.8.zip">plugin.video.tvstreamx-2.2.8.zip</a></li>
     </ul>
     <!-- =================================================================== -->
     
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
+    <script src="updater.js"></script>
     <script src="script.js"></script>
     <script>
         feather.replace();
