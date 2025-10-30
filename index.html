@@ -1,150 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TVSTREAMX - O Melhor Addon para Kodi</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-</head>
-<body class="bg-gray-900 text-white">
-    <custom-navbar></custom-navbar>
-    
-    <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0" id="vanta-bg"></div>
-        <div class="container mx-auto px-4 z-10 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-pulse">
-                <span class="text-purple-500">TVSTREAMX</span>
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                A Solução Completa para Kodi com proteção contra bloqueios, 100% gratuita e sem necessidade de VPN!
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#features" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center">
-                    <i data-feather="eye" class="inline mr-2"></i> Conheça
-                </a>
-                <a href="#download" class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center">
-                    <i data-feather="download" class="inline mr-2"></i> Instalar
-                </a>
-                <a href="https://t.me/tvstreamx" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center">
-                    <i data-feather="send" class="inline mr-2"></i> Grupo
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16">O que o TVSTREAMX oferece?</h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-gray-900 p-8 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all">
-                    <div class="text-purple-500 mb-4">
-                        <i data-feather="tv" class="w-12 h-12"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3">TV Ao Vivo</h3>
-                    <p class="text-gray-400">
-                        Canais de TV abertos e fechados com qualidade HD e anti-bloqueio integrado contra as operadoras.
-                    </p>
-                </div>
-                
-                <!-- Feature 2 -->
-                <div class="bg-gray-900 p-8 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all">
-                    <div class="text-purple-500 mb-4">
-                        <i data-feather="film" class="w-12 h-12"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3">Filmes e Séries</h3>
-                    <p class="text-gray-400">
-                        Catálogo completo com lançamentos em português e legendados. Todos os filmes e séries que você imaginar.
-                    </p>
-                </div>
-                
-                <!-- Feature 3 -->
-                <div class="bg-gray-900 p-8 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all">
-                    <div class="text-purple-500 mb-4">
-                        <i data-feather="shield" class="w-12 h-12"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3">Sem VPN</h3>
-                    <p class="text-gray-400">
-                        Tecnologia anti-bloqueio avançada que dispensa completamente o uso de VPN ou DNS alternativo.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16">Como instalar o TVSTREAMX</h2>
-            
-            <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-xl">
-                <div class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4 text-purple-500">
-                        <i data-feather="download" class="inline mr-2"></i> Passo a Passo
-                    </h3>
-                    <ol class="list-decimal pl-6 space-y-4">
-                        <li>Abra o Kodi e vá em Configurações > Gerenciador de arquivos.</li>
-                        <li>Selecione "Adicionar fonte" e digite a URL: <code class="bg-gray-900 px-2 py-1 rounded">https://streamxtv.github.io</code></li>
-                        <li>Volte para a tela inicial, vá em "Add-ons".</li>
-                        <li>Clique no ícone de caixa aberta (ou "Instalar de arquivo zip").</li>
-                        <li>Selecione a fonte "streamxtv.github.io" que você acabou de criar.</li>
-                        <li>Instale o addon principal: <code id="addon-filename-display" class="bg-gray-900 px-2 py-1 rounded">buscando a versão mais recente...</code></li>
-                        <li>Pronto! O addon aparecerá em "Add-ons de Vídeo".</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16">Perguntas Frequentes</h2>
-            
-            <div class="max-w-3xl mx-auto">
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold mb-2">Preciso de VPN para usar o TVSTREAMX?</h3>
-                    <p class="text-gray-400">Não! Nosso sistema anti-bloqueio avançado dispensa completamente o uso de VPN ou DNS alternativo.</p>
-                </div>
-                
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold mb-2">O TVSTREAMX é realmente gratuito?</h3>
-                    <p class="text-gray-400">Sim! Nosso addon é 100% gratuito e sempre será. Não cobramos nada e não exibimos anúncios.</p>
-                </div>
-                
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold mb-2">Como posso ajudar o projeto?</h3>
-                    <p class="text-gray-400">Compartilhando com amigos, reportando problemas e participando do nosso grupo no Telegram para feedback.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <custom-footer></custom-footer>
-
-    <!-- =================================================================== -->
-    <!--  BLOCO PARA O KODI - FICA INVISÍVEL NO NAVEGADOR                   -->
-    <!-- =================================================================== -->
-    <ul class="kodi-list">
-      <li><a id="addon-download-link" href="plugin.video.tvstreamx-2.2.8.zip">plugin.video.tvstreamx-2.2.8.zip</a></li>
-    </ul>
-    <!-- =================================================================== -->
-    
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="updater.js"></script>
-    <script src="script.js"></script>
-    <script>
-        feather.replace();
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   TVSTREAMX - O Melhor Addon para Kodi
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js">
+  </script>
+  <script src="https://unpkg.com/feather-icons">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js">
+  </script>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <custom-navbar>
+  </custom-navbar>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden" id="hero">
+   <div class="absolute inset-0 z-0" id="vanta-bg">
+   </div>
+   <div class="container mx-auto px-4 z-10 text-center">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-pulse">
+     <span class="text-purple-500">
+      TVSTREAMX
+     </span>
+    </h1>
+    <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+     A Solução Completa para Kodi com proteção contra bloqueios, 100% gratuita e sem necessidade de VPN!
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+     <a class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center" href="#features">
+      <i class="inline mr-2" data-feather="eye">
+      </i>
+      Conheça
+     </a>
+     <a class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center" href="#download">
+      <i class="inline mr-2" data-feather="download">
+      </i>
+      Instalar
+     </a>
+     <a class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all inline-flex items-center justify-center" href="https://t.me/tvstreamx" target="_blank">
+      <i class="inline mr-2" data-feather="send">
+      </i>
+      Grupo
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="py-20 bg-gray-800" id="features">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-16">
+     O que o TVSTREAMX oferece?
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+     <!-- Feature 1 -->
+     <div class="bg-gray-900 p-8 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all">
+      <div class="text-purple-500 mb-4">
+       <i class="w-12 h-12" data-feather="tv">
+       </i>
+      </div>
+      <h3 class="text-2xl font-bold mb-3">
+       TV Ao Vivo
+      </h3>
+      <p class="text-gray-400">
+       Canais de TV abertos e fechados com qualidade HD e anti-bloqueio integrado contra as operadoras.
+      </p>
+     </div>
+     <!-- Feature 2 -->
+     <div class="bg-gray-900 p-8 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all">
+      <div class="text-purple-500 mb-4">
+       <i class="w-12 h-12" data-feather="film">
+       </i>
+      </div>
+      <h3 class="text-2xl font-bold mb-3">
+       Filmes e Séries
+      </h3>
+      <p class="text-gray-400">
+       Catálogo completo com lançamentos em português e legendados. Todos os filmes e séries que você imaginar.
+      </p>
+     </div>
+     <!-- Feature 3 -->
+     <div class="bg-gray-900 p-8 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all">
+      <div class="text-purple-500 mb-4">
+       <i class="w-12 h-12" data-feather="shield">
+       </i>
+      </div>
+      <h3 class="text-2xl font-bold mb-3">
+       Sem VPN
+      </h3>
+      <p class="text-gray-400">
+       Tecnologia anti-bloqueio avançada que dispensa completamente o uso de VPN ou DNS alternativo.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Download Section -->
+  <section class="py-20 bg-gray-900" id="download">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-16">
+     Como instalar o TVSTREAMX
+    </h2>
+    <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-xl">
+     <div class="mb-8">
+      <h3 class="text-2xl font-bold mb-4 text-purple-500">
+       <i class="inline mr-2" data-feather="download">
+       </i>
+       Passo a Passo
+      </h3>
+      <ol class="list-decimal pl-6 space-y-4">
+       <li>
+        Abra o Kodi e vá em Configurações &gt; Gerenciador de arquivos.
+       </li>
+       <li>
+        Selecione "Adicionar fonte" e digite a URL:
+        <code class="bg-gray-900 px-2 py-1 rounded">
+         https://streamxtv.github.io
+        </code>
+       </li>
+       <li>
+        Volte para a tela inicial, vá em "Add-ons".
+       </li>
+       <li>
+        Clique no ícone de caixa aberta (ou "Instalar de arquivo zip").
+       </li>
+       <li>
+        Selecione a fonte "streamxtv.github.io" que você acabou de criar.
+       </li>
+       <li>
+        Instale o addon principal:
+        <code class="bg-gray-900 px-2 py-1 rounded" id="addon-filename-display">
+         plugin.video.tvstreamx-2.3.1.zip
+        </code>
+       </li>
+       <li>
+        Pronto! O addon aparecerá em "Add-ons de Vídeo".
+       </li>
+      </ol>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- FAQ Section -->
+  <section class="py-20 bg-gray-800" id="faq">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-16">
+     Perguntas Frequentes
+    </h2>
+    <div class="max-w-3xl mx-auto">
+     <div class="mb-6">
+      <h3 class="text-xl font-bold mb-2">
+       Preciso de VPN para usar o TVSTREAMX?
+      </h3>
+      <p class="text-gray-400">
+       Não! Nosso sistema anti-bloqueio avançado dispensa completamente o uso de VPN ou DNS alternativo.
+      </p>
+     </div>
+     <div class="mb-6">
+      <h3 class="text-xl font-bold mb-2">
+       O TVSTREAMX é realmente gratuito?
+      </h3>
+      <p class="text-gray-400">
+       Sim! Nosso addon é 100% gratuito e sempre será. Não cobramos nada e não exibimos anúncios.
+      </p>
+     </div>
+     <div class="mb-6">
+      <h3 class="text-xl font-bold mb-2">
+       Como posso ajudar o projeto?
+      </h3>
+      <p class="text-gray-400">
+       Compartilhando com amigos, reportando problemas e participando do nosso grupo no Telegram para feedback.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <custom-footer>
+  </custom-footer>
+  <!-- =================================================================== -->
+  <!--  BLOCO PARA O KODI - FICA INVISÍVEL NO NAVEGADOR                   -->
+  <!-- =================================================================== -->
+  <ul class="kodi-list">
+   <li>
+    <a href="plugin.video.tvstreamx-2.3.1.zip" id="addon-download-link">
+     plugin.video.tvstreamx-2.3.1.zip
+    </a>
+   </li>
+  </ul>
+  <!-- =================================================================== -->
+  <script src="components/navbar.js">
+  </script>
+  <script src="components/footer.js">
+  </script>
+  <script src="script.js">
+  </script>
+  <script>
+   feather.replace();
         VANTA.GLOBE({
             el: "#vanta-bg",
             mouseControls: true,
@@ -157,6 +213,6 @@
             color: 0x7e22ce,
             backgroundColor: 0x111827
         });
-    </script>
-</body>
+  </script>
+ </body>
 </html>
